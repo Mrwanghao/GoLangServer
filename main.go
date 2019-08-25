@@ -29,6 +29,8 @@ func main() {
 			log.Fatal(fmt.Sprintf("accept err: %v", err))
 		} else {
 			log.Println("有人来了")
+
+			netserver.test()
 		}
 
 		// 开启新的 goroutine 处理该连接
